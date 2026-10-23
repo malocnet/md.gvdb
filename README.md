@@ -10,6 +10,6 @@ git checkout
 ```bash
 git config user.email "malocnet@gmail.com"
 git config user.name "malocnet"
-git config --global credential.helper libsecret
+git config credential.helper /usr/local/bin/git-credential-libsecret
 read -s -p "Enter token: " TOKEN && git clone https://malocnet:$TOKEN@github.com/malocnet/md.gvdb.git
 ```
